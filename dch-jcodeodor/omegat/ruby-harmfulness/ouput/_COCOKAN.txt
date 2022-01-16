@@ -1,0 +1,172 @@
+Level & Kelas & Method & CINT & CDISP  & MAXNESTING | CINT & CDISP  & MAXNESTING
+
+=== sudah
+ProjectUICommands sudah
+
+
+==== branch compiled
+EditorController & 
+activateEntry & EditorController & 21.0 & 0.714 & 3.0 
+showStat & EditorController & 10.0 & 0.8 & 4.0 
+gotoEntry & EditorController & 8.0 & 0.75 & 4.0 
+replaceEditText & EditorController & 9.0 & 0.666 & 2.0 
+
+EditorController & EditorController & 11.0 & 0.818 & 2.0  & EditorController & 11.0 & 0.909 & 2.0 ?? 
+
+projectSingleCompileMenuItemActionPerformed & MainWindowMenuHandler & 10.0 & 0.8 & 3.0 
+projectAccessCurrentSourceDocumentMenuItemActionPerformed & MainWindowMenuHandler & 8.0 & 0.75 & 2.0 
+projectAccessCurrentTargetDocumentMenuItemActionPerformed & MainWindowMenuHandler & 8.0 & 0.75 & 2.0 
+projectExitMenuItemActionPerformed & MainWindowMenuHandler & 8.0 & 0.75 & 4.0 
+editOverwriteSourceMenuItemActionPerformed & MainWindowMenuHandler & 8.0 & 0.75 & 2.0 
+editInsertSourceMenuItemActionPerformed & MainWindowMenuHandler & 8.0 & 0.75 & 2.0 
+editExportSelectionMenuItemActionPerformed & MainWindowMenuHandler & 9.0 & 0.666 & 3.0 
+
+==== branch refactoring-therest
+activateEntry & IsNewClass? & EditorEntry & 6.0 & 0.333 & 1.0 ?? 
+showStat & IsNewClass? & EditorEntry & 3.0 & 0.666 & 4.0 ?? 
+activateEntry & IsNewClass? & EditorController & 2.0 & 1.0 & 1.0 ?? 
+showStat & IsNewClass? & EditorController & 1.0 & 1.0 & 1.0 ?? 
+gotoEntry & IsNewClass? & EditorController & 1.0 & 1.0 & 1.0 ?? 
+gotoEntry & IsNewClass? & EditorController & 6.0 & 0.666 & 2.0 ?? 
+gotoEntry & IsNewClass? & EditorController & 8.0 & 0.75 & 4.0 ?? 
+replaceEditText & IsNewClass? & EditorController & 5.0 & 0.6 & 1.0 ?? 
+
+
+
+==== branch refactoring-therest
+
+
+SegmentPropertiesArea & IsNewClass? & SegmentPropertiesArea & 6.0 & 0.833 & 1.0 ?? 
+populatePaneMenu & IsNewClass? & SegmentPropertiesArea & 5.0 & 1.0 & 2.0 ?? 
+createActiveSegmentElement & IsNewClass? & SegmentBuilder & 5.0 & 0.8 & 2.0 ?? 
+SearchWindowController & IsNewClass? & SearchWindowController & 6.0 & 0.833 & 1.0 ?? 
+doReplace & IsNewClass? & SearchWindowController & 7.0 & 0.714 & 1.0 ?? 
+doSearch & IsNewClass? & SearchWindowController & 6.0 & 0.833 & 2.0 ?? 
+createMenuBar & IsNewClass? & ScriptingWindow & 6.0 & 0.833 & 1.0 ?? 
+doExternalCommand & IsNewClass? & RealProject & 5.0 & 0.8 & 2.0 ?? 
+saveProject & IsNewClass? & RealProject & 1.0 & 1.0 & 2.0 ?? 
+loadSourceFiles & IsNewClass? & RealProject & 2.0 & 1.0 & 1.0 ?? 
+
+install & IsNewClass? & SegmentPropertiesTableView & 7.0 & 0.857 & 1.0 ?? 
+install & IsNewClass? & SegmentPropertiesListView & 3.0 & 1.0 & 1.0 ?? 
+
+doWikiImport & IsNewClass? & ProjectFilesListController & 1.0 & 1.0 & 1.0 ?? 
+install & IsNewClass? & PreferencesWindowController.HighlightablePanel & 0.0 & 0.0 & 2.0 ?? 
+show & IsNewClass? & PreferencesWindowController & 2.0 & 1.0 & 1.0 ?? 
+createNodeTree & IsNewClass? & PreferencesWindowController & 7.0 & 0.857 & 1.0 ?? 
+populatePaneMenu & IsNewClass? & NotesTextArea & 3.0 & 1.0 & 2.0 ?? 
+saveProject & IsNewClass? & NotLoadedProject & 0.0 & 0.0 & 1.0 ?? 
+setFoundResult & IsNewClass? & MultipleTransPane & 5.0 & 1.0 & 4.0 ?? 
+populatePaneMenu & IsNewClass? & MultipleTransPane & 2.0 & 1.0 & 1.0 ?? 
+setFoundResult & IsNewClass? & MatchesTextArea & 8.0 & 0.625 & 3.0 ?? 
+populatePaneMenu & IsNewClass? & MatchesTextArea & 2.0 & 1.0 & 1.0 ?? 
+projectExitMenuItemActionPerformed & IsNewClass? & MainWindowMenuHandler & 5.0 & 0.6 & 2.0 ?? 
+setFoundResult & IsNewClass? & MachineTranslateTextArea & 1.0 & 1.0 & 2.0 ?? 
+populatePaneMenu & IsNewClass? & MachineTranslateTextArea & 1.0 & 1.0 & 1.0 ?? 
+install & IsNewClass? & LanguageToolConfigurationController.TreeListener & 0.0 & 0.0 & 1.0 ?? 
+install & IsNewClass? & ISegmentPropertiesView & 0.0 & 0.0 & 0.0 ?? 
+
+GlossaryTextArea & IsNewClass? & GlossaryTextArea & 8.0 & 1.0 & 1.0 ?? 
+setFoundResult & IsNewClass? & GlossaryTextArea & 4.0 & 1.0 & 2.0 ?? 
+showCreateGlossaryEntryDialog & IsNewClass? & GlossaryTextArea & 4.0 & 1.0 & 2.0 ?? 
+populatePaneMenu & IsNewClass? & GlossaryTextArea & 2.0 & 1.0 & 1.0 ?? 
+EntryListPane & IsNewClass? & EntryListPane & 9.0 & 0.777 & 1.0 ?? 
+setFoundResult & IsNewClass? & EntryInfoThreadPane & 0.0 & 0.0 & 0.0 ?? 
+
+
+
+DictionariesTextArea & IsNewClass? & DictionariesTextArea & 8.0 & 1.0 & 1.0 ?? 
+setFoundResult & IsNewClass? & DictionariesTextArea & 5.0 & 0.8 & 3.0 ?? 
+populatePaneMenu & IsNewClass? & DictionariesTextArea & 3.0 & 1.0 & 2.0 ?? 
+initializeGUI & IsNewClass? & Core & 11.0 & 0.909 & 1.0 ?? 
+activateEntry & IsNewClass? & ConsoleBindings & 0.0 & 0.0 & 1.0 ?? 
+gotoEntry & IsNewClass? & ConsoleBindings & 0.0 & 0.0 & 1.0 ?? 
+gotoEntry & IsNewClass? & ConsoleBindings & 0.0 & 0.0 & 1.0 ?? 
+gotoEntry & IsNewClass? & ConsoleBindings & 0.0 & 0.0 & 1.0 ?? 
+replaceEditText & IsNewClass? & ConsoleBindings & 0.0 & 0.0 & 1.0 ?? 
+showCreateGlossaryEntryDialog & IsNewClass? & ConsoleBindings & 0.0 & 0.0 & 1.0 ?? 
+populatePaneMenu & IsNewClass? & CommentsTextArea & 3.0 & 1.0 & 2.0 ?? 
+calcPerFile & IsNewClass? & CalcMatchStatistics & 6.0 & 1.0 & 1.0 ?? 
+forFile & IsNewClass? & CalcMatchStatistics & 1.0 & 1.0 & 2.0 ?? 
+show & IsNewClass? & BrowseTaasCollectionsController & 7.0 & 0.714 & 1.0 ?? 
+show & IsNewClass? & AlignPanelController & 6.0 & 1.0 & 3.0 ?? 
+show & IsNewClass? & AlignFilePickerController & 3.0 & 1.0 & 1.0 ?? 
+
+
+
+
+
+
+
+
+
+
+==branch compiled
+mouseClicked & org.omegat.gui.main.MainWindowUI$2 & 12.0 & 0.666 & 3.0 
+onApplicationStartup & org.omegat.gui.glossary.taas.TaaSPlugin$1 & 10.0 & 0.8 & 5.0 
+actionPerformed & org.omegat.gui.align.AlignPanelController$11 & 8.0 & 0.875 & 6.0 
+onLoad & org.omegat.externalfinder.ExternalFinder$1 & 8.0 & 0.75 & 3.0 
+getMarksForEntry & TransTipsMarker & 9.0 & 0.777 & 2.0 
+search & TaaSGlossary & 10.0 & 0.7 & 2.0 
+StatisticsWindow & StatisticsWindow & 8.0 & 0.875 & 2.0 
+install & SegmentPropertiesTableView & 10.0 & 0.9 & 2.0 
+SegmentPropertiesArea & SegmentPropertiesArea & 13.0 & 0.769 & 3.0 
+createActiveSegmentElement & SegmentBuilder & 13.0 & 0.846 & 5.0 
+SearchWindowController & SearchWindowController & 11.0 & 0.818 & 2.0 
+doReplace & SearchWindowController & 9.0 & 0.666 & 1.0 
+doSearch & SearchWindowController & 16.0 & 0.812 & 3.0 
+createMenuBar & ScriptingWindow & 11.0 & 0.909 & 1.0 
+initDefaults & SRX & 16.0 & 0.687 & 5.0 
+addSegment & RealProject.LoadFilesCallback & 9.0 & 0.666 & 3.0 
+addTranslation & RealProject.AlignFilesCallback & 14.0 & 0.714 & 6.0 
+doExternalCommand & RealProject & 9.0 & 0.777 & 3.0 
+saveProject & RealProject & 20.0 & 0.7 & 5.0 
+mergeTMX & RealProject & 10.0 & 0.8 & 1.0 
+loadSourceFiles & RealProject & 16.0 & 0.687 & 4.0 
+
+
+onEntry & ProjectTMX.Loader & 9.0 & 0.777 & 4.0 
+ProjectFilesListController & ProjectFilesListController & 14.0 & 0.714 & 4.0 
+show & PreferencesWindowController & 11.0 & 0.818 & 3.0 
+createNodeTree & PreferencesWindowController & 31.0 & 0.967 & 1.0 
+initComponents & NewTeamProject & 8.0 & 1.0 & 2.0 
+populateContextMenu & MatchesTextArea & 8.0 & 1.0 & 5.0 
+
+
+
+runGUI & Main & 9.0 & 0.666 & 3.0 
+runCreatePseudoTranslateTMX & Main & 13.0 & 0.692 & 3.0 
+runConsoleAlign & Main & 10.0 & 0.8 & 2.0 
+selectProjectConsoleMode & Main & 9.0 & 0.777 & 3.0 
+initGui & LanguageToolConfigurationController & 8.0 & 0.875 & 2.0 
+done & IssuesPanelController.IssueLoader & 8.0 & 0.75 & 3.0 
+init & IssuesPanelController & 12.0 & 0.666 & 3.0 
+show & IssueProvidersSelectorController & 9.0 & 0.666 & 2.0 
+GlossaryTextArea & GlossaryTextArea & 10.0 & 1.0 & 3.0 
+setFoundResult & GlossaryTextArea & 8.0 & 0.875 & 2.0 
+showCreateGlossaryEntryDialog & GlossaryTextArea & 8.0 & 0.75 & 5.0 
+populatePaneMenu & GlossaryTextArea & 9.0 & 0.888 & 2.0 
+search & FindGlossaryThread & 8.0 & 0.75 & 2.0 
+endup & FilterVisitor & 10.0 & 0.7 & 8.0 
+translateFile & FilterMaster & 10.0 & 0.7 & 2.0 
+initComponents & FilterEditor & 9.0 & 1.0 & 2.0 
+show & FilenamePatternsEditorController & 8.0 & 1.0 & 3.0 
+show & ExternalFinderItemURLEditorController & 9.0 & 0.666 & 2.0 
+show & ExternalFinderItemEditorController & 9.0 & 0.777 & 3.0 
+EntryListPane & EntryListPane & 10.0 & 0.8 & 4.0 
+detectTags & Entry & 12.0 & 0.666 & 8.0 
+addItems & EditorPopups.SpellCheckerPopup & 18.0 & 0.666 & 5.0 
+init & EditorPopups & 8.0 & 1.0 & 1.0 
+
+
+
+isPossible & DocumentFilter3 & 8.0 & 0.75 & 6.0 
+DictionariesTextArea & DictionariesTextArea & 10.0 & 1.0 & 2.0 
+initializeGUI & Core & 37.0 & 0.972 & 1.0 
+calcPerFile & CalcMatchStatistics & 11.0 & 0.818 & 2.0 
+forFile & CalcMatchStatistics & 9.0 & 0.666 & 3.0 
+show & BrowseTaasCollectionsController & 11.0 & 0.818 & 4.0 
+generateTableDisplay & BaseStatisticsPanel & 10.0 & 0.7 & 2.0 
+show & AlignPanelController & 32.0 & 0.968 & 6.0 
+show & AlignFilePickerController & 8.0 & 1.0 & 5.0 
+main & AlignFilePickerController & 9.0 & 0.777 & 2.0 

@@ -1,0 +1,156 @@
+1. Intensive
+FEW = 4-6
+
+((CINT > Short Memory Capacity AND CDISP < HALF)
+ OR 
+ (CINT > FEW AND CDISP < QUARTER))
+----
+CINT > 6 and CDISP < 0.5 OR
+CINT > 4 and CDISP < 0.25
+----
+CINT = 5,6 maka wajib CDISP < 0.25
+
+
+{5,6,...} disjoint {7,8...} //intersection pas CINT_2 bernilai 7 keatas, 
+maka CINT_2 lebih luas dari CINT_1
+{0.24,...} disjoint {0.49,..,0.25} //intersection pas CDISP_1 sudah dibawah 0.25
+CDISP_1 lebih luas dari CDISP_2
+
+contoh yg akan intersection kalau CINT = 9, lalu CDISP = 0.231 akan terdeteksi either kondisi 1 or kondisi 2
+
+contoh celah nilai yg akan membuat tidak terpenuhi
+jika CINT = 5,6 dan CDISP 0.4 maka tdk memenuhi intensive,masih ada celah utk tidak terpenuhi kondisinya
+bagaimana menghindarkan dengan overllaping?
+pakai union?
+prosedur : 
+1. simpan query hasil deteksi di table terpisah
+2. 
+
+utk deteksi intensive, CINT berbanding lurus dengan CDISP,
+semakin tinggi CINT maka cakupan CDISP semakin besar (< 0.5)
+kemungkinan bakal banyak yg terjaring dari query kondisi 2
+kondisi 2 subsume kondisi 1
+CINT_kond2 subsume CINT_kond1 (4,5,6,7...) tapi 5,6 bukan bagian CINT_kond1
+
+maka agar optimal query dilakukan dengan 
+--------------
+AND maxnesting > shallow
+Shallow = at least 1
+
+2. Dispersi
+CINT > Short Memory Capacity AND CDISP >= HALF
+AND maxnesting > shallow
+
+3. Shotgun surgery
+CM > short memory capacity and CC > many
+---------
+high intensive 
+kalau total metric = 3,i.e. {MAXNESTING,CINT,CDISP}, berarti kondisi 1 terpenuhi
+satu query dibuat untuk satu kondisi
+---------------------------------------------------------
+query kondisi dispersi
+---------------------------------------------------------
+query kondisi 1 intensive coupling
+((key = 'CINT' and value > 7) or 
+(key = 'CDISP' and value < 0.5) or  
+(key = 'MAXNESTING' and value > 0)) 
+---------------------------------------------------------
+query kondisi 2 intensive coupling
+((key = 'CINT' and value > 4) or 
+(key = 'CDISP' and value < 0.25) or  
+(key = 'MAXNESTING' and value > 0)) 
+------------------------------------------------------------
+select method_id from 
+( select mt.type,mt.method_id,mt.method,key,value 
+from MethodsAndTypes as mt 
+left join Measures as me  on me.measurable = mt.method_id
+where 
+(
+	(key = 'CINT' and value > 7) or 
+	(key = 'CDISP' and value < 0.5) or  
+	(key = 'MAXNESTING' and value > 0)
+) 
+group by method_id,key
+ORDER BY method_id
+) as inte
+group by method_id
+having count(method_id) > 2
+
+hasilnya  60 row
+method-id
+"342"	
+"343"	
+"561"	
+"610"	
+"1151"	
+"1239"	
+"1267"	
+"1319"	
+"1837"	
+"1935"	
+"1936"	
+"2275"	
+"3065"	
+"3783"	
+"3805"	
+"3850"	
+"3955"	
+"3956"	
+"4031"	
+"4035"	
+"4101"	
+"4163"	
+"4353"	
+"4398"	
+"4409"	
+"4410"	
+"4411"	
+"4412"	
+"4465"	
+"5295"	
+"5679"	
+"5698"	
+"5703"	
+"6014"	
+"6121"	
+"6352"	
+"6861"	
+"6948"	
+"7263"	
+"7269"	
+"7278"	
+"7296"	
+"7427"	
+"7572"	
+"7614"	
+"7617"	
+"8045"	
+"8047"	
+"8363"	
+"8602"	
+"8732"	
+"8891"	
+"8965"	
+"8969"	
+"9004"	
+"9201"	
+"9206"	
+"9283"	
+"9324"	
+"9596"	
+-------------------
+select method_id from 
+( select mt.type,mt.method_id,mt.method,key,value 
+from MethodsAndTypes as mt 
+left join Measures as me  on me.measurable = mt.method_id
+where 
+(
+	(key = 'CINT' and value > 4) or 
+	(key = 'CDISP' and value < 0.25) or  
+	(key = 'MAXNESTING' and value > 0)
+) 
+group by method_id,key
+ORDER BY method_id
+) as inte
+group by method_id
+having count(method_id) > 2

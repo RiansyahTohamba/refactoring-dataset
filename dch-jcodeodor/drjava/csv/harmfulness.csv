@@ -1,0 +1,7 @@
+"method","class","before_refac","after_refac"
+"init", "AbstractGlobalModel", 10, 8.875
+"_locateClassFile", "AbstractGlobalModel",7.75, 6.625
+"addToBrowserHistory", "AbstractGlobalModel", 6.625, 0
+"reloadPanel", "MainFrame", 8.875, 0
+"makeCommandPane", "MainFrame", 8.875, 0
+"_createDefScrollPane", "MainFrame", 8.875, 8.875

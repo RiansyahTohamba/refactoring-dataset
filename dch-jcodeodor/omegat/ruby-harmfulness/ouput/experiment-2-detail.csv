@@ -1,0 +1,11 @@
+method,class,cdisp,cdisp",cint,cint"
+
+10.0 & SegmentBuilder & createActiveSegmentElement & 13.0 & 0.846 & 5.0 0 & 0 & 0  
+10.0 & SegmentPropertiesArea & SegmentPropertiesArea & 13.0 & 0.769 & 3.0 0 & 0 & 0  
+
+org.omegat.gui.glossary.taas.TaaSPlugin$1 & onApplicationStartup & 10.0 & 0.8 &  0 & 0  
+EntryListPane & EntryListPane & 10.0 & 0.8 &  0 & 0  
+ScriptingWindow & createMenuBar & 11.0 & 0.909 &  0 & 0  
+SegmentPropertiesTableView & install & 10.0 & 0.9 &  0 & 0  
+MainWindowMenuHandler & projectSingleCompileMenuItemActionPerformed & 10.0 & 0.8 &  0 & 0
+

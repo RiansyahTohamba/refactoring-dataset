@@ -1,0 +1,30 @@
+"method","class","before_refac","after_refac"
+"DictionariesTextArea", "DictionariesTextArea",8.875,6.625  
+"initializeGUI","Core",10 ,8.875  
+"projectCreateMED","ProjectUICommands",5.5 ,0 
+"projectOpen","ProjectUICommands",6.625 ,0 
+"projectEditProperties","ProjectUICommands",5.5 ,0 
+"projectImportFiles","ProjectUICommands",7.75 ,0 
+"doWikiImport","ProjectUICommands",7.75 ,0 
+"doExternalCommand","RealProject",7.75 ,0 
+"saveProject","RealProject",5.5 ,0 
+"mergeTMX","RealProject",8.875 ,0 
+"loadSourceFiles","RealProject",5.5 ,0 
+"EditorController","EditorController",8.875 ,8.875  
+"activateEntry","EditorController",5.5 ,0  
+"showStat","EditorController",8.875 ,0  
+"replaceEditText","EditorController",3.25 ,0  
+"SearchWindowController","SearchWindowController",8.875 ,0  
+"doReplace","SearchWindowController",3.25 ,0  
+"doSearch","SearchWindowController",10.0 ,0  
+"GlossaryTextArea","GlossaryTextArea",8.875 ,6.625  
+"setFoundResult","GlossaryTextArea",6.625 ,0  
+"showCreateGlossaryEntryDialog","GlossaryTextArea",6.625 ,0  
+"populatePaneMenu","GlossaryTextArea",7.75 ,0  
+"calcPerFile","CalcMatchStatistics",8.875 ,0  
+"forFile","CalcMatchStatistics",3.25 ,0  
+"createNodeTree","PreferencesWindowController",10 ,0  
+"show","PreferencesWindowController",8.875 ,0  
+"show","AlignFilePickerController",6.625 ,0  
+"show","AlignPanelController",10 ,0  
+"show","BrowseTaasCollectionsController" ,8.875 ,0

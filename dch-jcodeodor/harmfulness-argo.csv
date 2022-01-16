@@ -1,0 +1,6 @@
+"method","class","before_refac","after_refac"
+"setUpMenus", "JGraphFrame", 10, 0
+"getOptions2", "WizBreakCircularComp", 5.5, 0
+"buildOptions", "WizAssocComposite", 4.375, 0
+"actionPerformed", "UseReshapeAction", 3.25, 0
+"doIt", "CmdUseResize", 3.25, 3.25

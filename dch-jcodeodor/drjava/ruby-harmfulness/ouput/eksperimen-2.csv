@@ -1,0 +1,14 @@
+method,class,dch,dch"
+onEntry, ProjectTMX;Loader, 7;75,?
+show, ExternalFinderItemEditorController ,7;75,?
+initComponents, FilterEditor  ,7;75,?
+getMarksForEntry, TransTipsMarker  ,7;75,?
+initComponents, NewTeamProject , 6;625, ?
+show, FilenamePatternsEditorController , 6;625, ?
+initGui, LanguageToolConfigurationController , 6;625, ?
+done, IssuesPanelController;IssueLoader , 6;625, ?
+populateContextMenu, MatchesTextArea , 6;625, ?
+isPossible, DocumentFilter3 , 6;625, ?
+gotoEntry, EditorController  , 6;625, ?
+init, EditorPopups , 6;625, ?
+StatisticsWindow, StatisticsWindow , 6;625, ?

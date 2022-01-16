@@ -1,0 +1,38 @@
+
+
+
+
+
+
+doWikiImport & compiledbranch & ProjectFilesListController & 1.0 & 1.0 & 1.0 \\ 
+doWikiImport & compiledbranch & ProjectUICommands & 3.0 & 1.0 & 2.0 \\ 
+
+
+
+
+
+
+main & compiledbranch & TeamTool & 3.0 & 1.0 & 3.0 \\ 
+mergeTMX & compiledbranch & VersioningProject & 7.0 & 0.714 & 1.0 \\ 
+
+projectCreateMED & compiledbranch & ProjectUICommands & 4.0 & 0.75 & 2.0 \\ 
+projectEditProperties & compiledbranch & ProjectUICommands & 0.0 & 0.0 & 2.0 \\ 
+
+
+projectImportFiles & compiledbranch & ProjectUICommands & 0.0 & 0.0 & 1.0 \\ 
+projectImportFiles & compiledbranch & ProjectUICommands & 4.0 & 1.0 & 3.0 \\ 
+projectOpen & compiledbranch & ProjectUICommands & 0.0 & 0.0 & 1.0 \\ 
+projectOpen & compiledbranch & ProjectUICommands & 4.0 & 1.0 & 5.0 \\ 
+replaceEditText & compiledbranch & ConsoleBindings & 0.0 & 0.0 & 1.0 \\ 
+
+
+
+setFoundResult & compiledbranch & DictionariesTextArea & 5.0 & 0.8 & 3.0 \\ 
+setFoundResult & compiledbranch & EntryInfoThreadPane & 0.0 & 0.0 & 0.0 \\ 
+
+setFoundResult & compiledbranch & MachineTranslateTextArea & 1.0 & 1.0 & 2.0 \\ 
+setFoundResult & compiledbranch & MatchesTextArea & 8.0 & 0.625 & 3.0 \\ 
+setFoundResult & compiledbranch & MultipleTransPane & 5.0 & 1.0 & 4.0 \\ 
+
+
+
